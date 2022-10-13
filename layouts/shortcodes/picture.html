@@ -1,0 +1,27 @@
+{{- $normal := .Get "src" }}
+{{- $dark := .Get 1 }}
+{{- $alt := .Get 2 }}
+{{- $normalPath := absURL (printf "images/%s" $normal) }}
+{{- $darkPath := absURL (printf "images/%s" $dark) }}
+
+
+<div class='picture {{ .Get "class"}}'>
+  {{ if .Get "link"}}<a href='{{ .Get "link"}}'>{{ end }}
+  {{ if .Get "caption"}}
+  <figure>
+  {{ end }}
+
+    <picture>
+      <img srcset="{{ $normalPath }}" alt="{{ $alt }}" >
+    </picture>
+
+    
+  {{ if .Get "caption"}}
+    <figcaption>
+      {{ .Get "caption" }}
+    </figcaption>
+  </figure>
+  {{ end }}
+
+  {{ if .Get "link"}}</a>{{ end }}
+</div>

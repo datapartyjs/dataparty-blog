@@ -1,0 +1,27 @@
+<head>
+  <title>{{ with .Title }}{{ humanize . }} | {{ end }}{{ .Site.Title }}</title>
+  <meta charset='utf-8'>
+  {{- with .Site.Params.ga_verify }}
+  <meta name="google-site-verification" content="{{ . }}" />
+  {{- end }}
+
+  {{ range .Site.Params.googlefonts }}
+  <link rel="stylesheet" {{ printf "href=\"//fonts.googleapis.com/css?family=%s\"" . | safeHTMLAttr }} type="text/css" media="all" />
+  {{ end }}
+  
+  <style>
+    body {
+        font-family: '{{ .Site.Params.fontbody }}';
+    }
+    #brand-font {
+       font-family: '{{ .Site.Params.fontbrand }}'; 
+    }
+    </style>
+
+  <meta name="viewport" content ="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {{- partialCached "analytics" . }}
+  {{- partial "opengraph" . }}
+  {{- partialCached "favicon" . }}
+  {{- partialCached "styles" . }}
+</head>
