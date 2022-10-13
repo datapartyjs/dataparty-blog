@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on dataparty/blog</title>
+    <link>https://dataparty.xyz/blog/categories/</link>
+    <description>Recent content in Categories on dataparty/blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2022, Weru and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dataparty.xyz/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rfparty</title>
+      <link>https://dataparty.xyz/blog/categories/rfparty/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataparty.xyz/blog/categories/rfparty/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

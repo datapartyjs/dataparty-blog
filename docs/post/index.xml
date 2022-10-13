@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on dataparty/blog</title>
+    <link>https://dataparty.xyz/blog/post/</link>
+    <description>Recent content in Posts on dataparty/blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2022, Weru and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dataparty.xyz/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rfparty - a new way to see BLE</title>
+      <link>https://dataparty.xyz/blog/post/rfparty-a-new-way-to-see-ble/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dataparty.xyz/blog/post/rfparty-a-new-way-to-see-ble/</guid>
+      <description>Rfparty is an app for exploring your wireless world.
+Today, Millions of IoT devices emit wireless BLE signals. Built for educators, developers, cybersecurity specialist and the privacy minded to audit these BLE signals.
+Is BLE Private? BLE has become a major part of many people&amp;rsquo;s digital experience. But are these devices built with reasonable privacy? Today, there&amp;rsquo;s no way for consumers to know for sure, other than to read the media.</description>
+    </item>
+    
+  </channel>
+</rss>
