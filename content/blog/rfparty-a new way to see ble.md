@@ -1,6 +1,6 @@
 ---
 author: null
-date: 2022-10-08
+date: 2022-10-13
 title: "Rfparty - a new way to see BLE"
 description: 'foo bar'
 image: rfparty-images/rfparty-splash-1280.png
