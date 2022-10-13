@@ -6,6 +6,7 @@ copyright = "Copyright © 2022, Weru and the Hugo Authors; all rights reserved."
 canonifyurls = true
 paginate = 6
 
+
 publishDir = "docs"
 
 [markup]
@@ -28,6 +29,7 @@ publishDir = "docs"
 # ids used below are not valid. Replace with valid ones
 [params]
   author="Dataparty"
+  keywords="blog, dataparty, dao, rfparty, ninjs in tokyo, teleop, rfpartyxyz, wardriving, privacy, airtag, tile, tracker, bluetooth, ble, kismet"
   googlefonts = ["Roboto+Condensed", "Roboto", "Roboto+Mono"]
   fontbody = "Roboto+Condensed"
   fontbrand = "Roboto+Condensed"
