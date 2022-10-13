@@ -10,10 +10,9 @@ categories: [
 ]
 ---
 
-[Rfparty](https://play.google.com/store/apps/details?id=xyz.dataparty.rfparty) is an app for exploring your wireless world.
+Today, Millions of IoT devices emit wireless BLE advertisements. 
 
-Today, Millions of IoT devices emit wireless BLE signals. Built for educators, developers, cybersecurity specialist and the privacy minded to audit these BLE signals.
-
+[Rfparty](https://play.google.com/store/apps/details?id=xyz.dataparty.rfparty) is an app for exploring your wireless world. Built for educators, developers, cybersecurity specialist and the privacy minded to audit these BLE signals.
 
 
 ## Is BLE Private?
@@ -42,7 +41,7 @@ Today, Apple only provides comprehensive "always-on" privacy safeguards to Apple
 # _"It's pretty terrible"_ {align=center}
 
 
-So far Apple's Android solution has earned a rare [_"It's pretty terrible"_ from macworld](https://www.macworld.com/article/559337/airtag-tracker-detect-android-app.html). Meanwhile the [Washington Post reached an alarm conclusion](https://www.washingtonpost.com/technology/2022/03/31/airtags-stalking/):
+So far Apple's Android solution has earned a rare [_"It's pretty terrible"_ from macworld](https://www.macworld.com/article/559337/airtag-tracker-detect-android-app.html). Meanwhile the [Washington Post reached an alarming conclusion](https://www.washingtonpost.com/technology/2022/03/31/airtags-stalking/):
 
 _"Our test with a baby stroller finds it’s still too easy to stalk people with AirTags, Tiles and Samsung SmartTags — and no single company can fix it alone"_
 
@@ -68,7 +67,7 @@ In this demonstration, rfparty is used to audit the BLE behavior of a GoPro acti
 
 {{<youtube "bDwpsSFVAN8" >}}
 
-Today rfparty supports a robust set of queries and is stable enough to the BLE curious to peer into these unseen systems. We hope to continuously improve the tool and bring more features to close the skills gap needed to audit wireless systems.
+Today rfparty supports a robust set of queries and is stable enough for the BLE curious to peer into these unseen systems. We hope to continuously improve the tool and bring more features to close the skills gap needed to audit wireless systems.
 
 ## Getting rfparty
 
@@ -78,5 +77,41 @@ Rfparty is currently available for Android:
   * Open Source version on [github](https://github.com/datapartyjs/rfparty-xyz).
 
 
-{{<picture src="google-play-badge.png" link="https://play.google.com/store/apps/details?id=xyz.dataparty.rfparty">}}
+{{< rawhtml >}}
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+    <form action="https://xyz.us21.list-manage.com/subscribe/post?u=7cfbc2e5276396fb5f543a2ed&amp;id=5ea825f5ee&amp;f_id=007bc2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+        <div id="mc_embed_signup_scroll">
+  <h2>Mailing List</h2>
+        
+        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+	<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7cfbc2e5276396fb5f543a2ed_5ea825f5ee" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+        </div>
+    </div>
+</form>
+</div>
 
+<!--End mc_embed_signup-->
+{{< /rawhtml >}}
+
+{{<picture src="google-play-badge.png" link="https://play.google.com/store/apps/details?id=xyz.dataparty.rfparty">}}
