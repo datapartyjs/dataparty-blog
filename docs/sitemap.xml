@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dataparty.xyz/blog/categories/</loc>
+    <loc>https://blog.dataparty.xyz/categories/</loc>
     <lastmod>2022-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dataparty.xyz/blog/post/</loc>
+    <loc>https://blog.dataparty.xyz/post/</loc>
     <lastmod>2022-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dataparty.xyz/blog/tags/rfparty/</loc>
+    <loc>https://blog.dataparty.xyz/tags/rfparty/</loc>
     <lastmod>2022-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dataparty.xyz/blog/categories/rfparty/</loc>
+    <loc>https://blog.dataparty.xyz/categories/rfparty/</loc>
     <lastmod>2022-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dataparty.xyz/blog/post/rfparty-a-new-way-to-see-ble/</loc>
+    <loc>https://blog.dataparty.xyz/post/rfparty-a-new-way-to-see-ble/</loc>
     <lastmod>2022-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dataparty.xyz/blog/tags/</loc>
+    <loc>https://blog.dataparty.xyz/tags/</loc>
     <lastmod>2022-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dataparty.xyz/blog/</loc>
+    <loc>https://blog.dataparty.xyz/</loc>
     <lastmod>2019-08-25T00:52:59+03:00</lastmod>
   </url>
 </urlset>

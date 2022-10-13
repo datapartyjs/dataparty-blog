@@ -1,5 +1,5 @@
-baseurl = "https://dataparty.xyz/blog/"  # Include trailing slash
-title = "dataparty/blog"
+baseurl = "https://blog.dataparty.xyz/"  # Include trailing slash
+title = "blog.dataparty"
 theme = "newsroom"
 author = "Dataparty"
 copyright = "Copyright © 2022, Weru and the Hugo Authors; all rights reserved."
