@@ -24,7 +24,7 @@ BLE has become a major part of many people's digital experience. But are these d
 
 
 
-While BLE has strong protections against ease dropping and man-in-the-middle attacks, BLE retains one significant security challenge. How do users connect to their devices?
+While BLE has strong protections against eavesdropping and man-in-the-middle attacks, BLE retains one significant security challenge. How do users connect to their devices?
 
 The most common solution that BLE devices employ, is to send out public broadcasts, announcing the devices existence. This way, the owner can "scan" for these public transmissions, and pair to establish a secure connection. A challenge for device privacy is, that many devices never stop sending out these public beacons. In fact, many BLE products work on entirely broadcast protocols, allowing anyone to learn about the user and their devices by simply listening to these unencrypted transmissions.
 
