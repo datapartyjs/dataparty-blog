@@ -4,7 +4,7 @@ date: 2022-10-13
 title: "Rfparty - a new way to see BLE"
 description: 'foo bar'
 image: rfparty-images/rfparty-splash-1280.png
-tags: ['rfparty']
+tags: ['rfparty', 'app', 'privacy']
 categories: [
   'rfparty'
 ]
@@ -65,7 +65,7 @@ Auditing your BLE devices is the first step to understanding how to improve BLE 
 
 In this demonstration, rfparty is used to audit the BLE behavior of a GoPro action camera. The app is left running in the background while the tester walks around a park. It was found that the GoPro sent beacons both when powered on, but also when visibly powered off. This enabled the rfparty app to partially reconstruct the portion of the user's journey where the user's movements may have been trackable via BLE.
 
-{{<youtube "bDwpsSFVAN8" >}}
+{{<youtube "kDboDShA8do" >}}
 
 Today rfparty supports a robust set of queries and is stable enough for the BLE curious to peer into these unseen systems. We hope to continuously improve the tool and bring more features to close the skills gap needed to audit wireless systems.
 
