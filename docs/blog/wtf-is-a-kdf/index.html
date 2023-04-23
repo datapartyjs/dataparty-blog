@@ -47,7 +47,7 @@
       "dateModified": "2023-22-04",
       "author": {
         "@type": "Person",
-        "name": ""
+        "name": "nullagent"
       },
       "image":{
         "@type":"ImageObject",
@@ -114,12 +114,13 @@
         
           <p>Earlier this week a letter from an activist imprisoned in France was <a href="https://nantes.indymedia.org/posts/87395/une-lettre-divan-enferme-a-la-prison-de-villepinte-perquisitions-et-disques-durs-dechiffres/">posted to the internet</a>. Contained within Ivan Alococo’s dispatch from the Villepinte prison was <a href="https://twitter.com/rechelon/status/1648094323186241536">a startling revelation</a>. Police had cracked his LUKS hard drive password. A feat that once was impossible can now be accomplished in a few months by harnessing <a href="https://kolektiva.social/@cedar/110214532879538171">as many as 10,000 servers</a> with modern GPUs. At the root of this breach is a cryptographic function that is showing its age, PBKDF2.</p>
 <p>This episode is a wake up call to learn wtf is a KDF?</p>
-<h2 id="what-is-akdf">What is a KDF?</h2>
+<h2 id="what-is-a-kdf">What is a KDF?</h2>
 <p>In modern computing when applications provide strong file encryption they frequently use passwords to protect files. For passwords to be strong they must contain a lot of entropy and generally appear as random as possible. Obviously humans tend to use characters and phrases from their native language combined with memorable patterns or rules that help them remember these passwords.</p>
-<p>Key derivation functions (KDFs) are tools that allow us to improve the entropy derived from the types of passwords people typically use. By performing a series of hashing and salting KDFs season the user&rsquo;s input with entropy sufficient for use in private keys for algorithms like AES and NaCl.</p>
-<p>In the case of this French prisoner they were using Linux&rsquo;s most popular hard drive encryption tool, LUKS, which was using a PBKDF2 to generate AES keys. In Ubuntu 18.04 this is the default configuration. PBKDF2 is a password based KDF designed to be resistant to CPU based attacks and dates back to 2000. It was first mentioned as an <a href="https://www.rfc-editor.org/rfc/rfc2898#section-5.2">internet standard in RFC-2898 in September 2000</a>.</p>
+<p>Key derivation functions (KDFs) are tools that allow us to improve the entropy derived from the types of keys and passwords applications typically use. By performing a series of hashing and salting <code>PBKDF2</code> seasons the user&rsquo;s input with entropy sufficient for use in private keys for algorithms like AES and NaCl.</p>
+<p>Many <a href="https://crypto.stackexchange.com/a/40767">types of KDFs exist</a>. Specialized KDFs are also used to generate keys from Diffie-Helman output and cryptographic random numbers.</p>
+<p>In the case of this French prisoner they were using Linux&rsquo;s most popular hard drive encryption tool, LUKS, which was using a <code>PBKDF2</code> to generate AES keys. In Ubuntu 18.04 this is the default configuration. <code>PBKDF2</code> is a password based KDF designed to be resistant to CPU based attacks and dates back to 2000. It was first mentioned as an <a href="https://www.rfc-editor.org/rfc/rfc2898#section-5.2">internet standard in RFC-2898 in September 2000</a>.</p>
 <h2 id="a-startling-revelation">A startling revelation</h2>
-<p>Since the time PBKDF2 was designed, we&rsquo;ve seen the rise of powerful GPUs become common place. To defend against this rising onslaught of GPU hashing powering is a relatively new algorithm, argon2.</p>
+<p>Since the time PBKDF2 was designed, we&rsquo;ve seen the rise of powerful GPUs become common place. To defend against this rising <a href="https://blog.elcomsoft.com/2020/08/breaking-luks-encryption/">onslaught of GPU hashing power</a> is a relatively new algorithm, argon2.</p>
 
 
 
@@ -144,7 +145,7 @@
   
 </div>
 
-<h2 id="how-does-argon2work">How does Argon2 Work?</h2>
+<h2 id="how-does-argon2-work">How does Argon2 Work?</h2>
 <p>The cryptographic power of argon2 is sublte but brilliant. Instead of focusing on CPU time by requiring large numbers of hash iterations, argon2 wages war on your GPUs memory capacity. When hashing a password with argon2 an application developer can dial up the amount of RAM that is required to complete the computation. In so doing it starves the globs of highly parallel computation cores in a GPU reducing the total processing power the GPU can bring to bear.</p>
 <p>Why does this work? On modern GPUs the exact number of threads that are active in parallel varies between models and is dependent on the amount of GPU ram required per thread. Small operations on typical GPUs may see as many as 2000 threads running in parallel. Meanwhile even the largest cloud GPUs max out around 80GB of on board memory. If argon2 is configured to use 1GB to compute password hashes then even an <a href="https://www.nvidia.com/en-us/data-center/a100/">NVIDIA A100</a> would only be able to try 80 passwords in parallel instead of the orders of magnitude more cores that would be active when attacking PBKDF2 hashed passwords.</p>
 
@@ -171,12 +172,14 @@
   
 </div>
 
-<h2 id="argon2-and-you">Argon2 and you . . .</h2>
+<h2 id="argon2-and-you---">Argon2 and you . . .</h2>
 <p>If you&rsquo;re a developer who builds secure apps and this is your first time hearing about argon2 its probably a good time to review your code. On nodejs check for uses of crypto.pbkdf2 that should be upgraded.</p>
 <p>If you&rsquo;re a Linux user, more likely than not your LUKS partitions will already using <code>argon2id</code>. You can check by running the <code>lsblk</code> command to find the name of an active partition. Then running:</p>
 <p><code>sudo cryptsetup luksDump /dev/&lt;YOUR_PARTITION_HERE&gt;</code></p>
 <p>If you do happen to be using an outdated algorithm you should update it! Matthew Garrett, a Linux developer, has written a great <a href="https://mjg59.dreamwidth.org/66429.html">guide to updating old LUKS partitions</a>.</p>
-<h2 id="using-argon2-innodejs">Using argon2 in nodejs</h2>
+<h3 id="is-pbkdf2-broken">Is PBKDF2 broken?</h3>
+<p>On the face of it, no. PBKDF2 is not fundamentally broken. It&rsquo;s safe so long as the user always has <a href="https://www.reddit.com/r/linux/comments/12q51ce/comment/jgpvsqc/?utm_source=share&amp;utm_medium=web2x&amp;context=3">a 13 character or longer actually-random™ password</a>. The choice of pbkdf2 vs argon2 is of course domain and application dependant. It remains unclear exactly how authorities accessed Ivan’s hard drive.  so this is more a wake up call</p>
+<h2 id="using-argon2-in-nodejs">Using argon2 in nodejs</h2>
 
 
 
@@ -203,7 +206,7 @@
 
 <p>At the hacker collective, <a href="https://dataparty.xyz">dataparty</a>, we&rsquo;ve been building a secure configuration feature that we intend to use to make a secure, decentralized database management tool. We&rsquo;d recently relied upon pbkdf2 but with the news of Ivan&rsquo;s letter from a French prison we&rsquo;ve taken the time to upgrade to argon2 in our nodejs codebases.</p>
 <p>You can see how we upgraded to argon2 by <a href="https://github.com/datapartyjs/dataparty-api/issues/71">reading through this feature request</a> and the <a href="https://github.com/datapartyjs/dataparty-crypto/pull/16">PRs referenced within</a>.</p>
-<h2 id="nodejs-vsbrowser">Nodejs vs. Browser</h2>
+<h2 id="nodejs-vs-browser">Nodejs vs. Browser</h2>
 <p>We had some trouble getting the nodejs focused module <a href="https://www.npmjs.com/package/argon2"><code>argon2</code></a> and the browser module <a href="https://www.npmjs.com/package/argon2-browser"><code>argon2-browser</code></a> to play nice together. Sadly these libraries do not both use the same API. We made a wrapper function in <a href="https://medium.com/r/?url=https%3A%2F%2Fgithub.com%2Fdatapartyjs%2Fdataparty-crypto"><code>@dataparty/crypto</code></a> that allows you to use the same API for both modules. We&rsquo;ve posted a complete example for nodejs usage on github:</p>
 <p><a href="https://github.com/datapartyjs/dataparty-crypto/blob/master/examples/example-password-argon2.js"><code>dataparty-crypto/example-password-argon2.js</code> at master · <code>@dataparty/crypto</code></a></p>
 <p>Meanwhile we&rsquo;ve added an argon2 example to our <a href="https://github.com/datapartyjs/dataparty-crypto/blob/master/examples/index.html#L98-L124">browser example</a>.</p>
@@ -214,6 +217,14 @@
 <li><a href="https://github.com/datapartyjs">https://github.com/datapartyjs</a></li>
 <li><a href="https://dataparty.xyz">https://dataparty.xyz</a></li>
 <li>Join our discord <a href="https://discord.gg/JrYQ3f4Pxz">https://discord.gg/JrYQ3f4Pxz</a></li>
+</ul>
+<h2 id="heading"></h2>
+<h2 id="changes">Changes</h2>
+<p>(23-04-2023)</p>
+<ul>
+<li>Clarify <a href="#what-is-a-kdf">types of KDFs</a></li>
+<li>Add <a href="#a-startling-revelation">link to commercial LUKS cracking cloud</a></li>
+<li>Add <a href="#is-pbkdf2-broken">&ldquo;Is PBKDF2 broken?&quot;</a> section</li>
 </ul>
 
         </div>
