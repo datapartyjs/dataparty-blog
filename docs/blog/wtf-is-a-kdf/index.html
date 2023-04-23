@@ -117,7 +117,7 @@
 <h2 id="what-is-a-kdf">What is a KDF?</h2>
 <p>In modern computing when applications provide strong file encryption they frequently use passwords to protect files. For passwords to be strong they must contain a lot of entropy and generally appear as random as possible. Obviously humans tend to use characters and phrases from their native language combined with memorable patterns or rules that help them remember these passwords.</p>
 <p>Key derivation functions (KDFs) are tools that allow us to improve the entropy derived from the types of keys and passwords applications typically use. By performing a series of hashing and salting <code>PBKDF2</code> seasons the user&rsquo;s input with entropy sufficient for use in private keys for algorithms like AES and NaCl.</p>
-<p>Many <a href="https://crypto.stackexchange.com/a/40767">types of KDFs exist</a>. Specialized KDFs are also used to generate keys from Diffie-Helman output and cryptographic random numbers.</p>
+<p>Many <a href="https://crypto.stackexchange.com/a/40767">types of KDFs exist</a>. Specialized KDFs are also used to <a href="https://soatok.blog/2021/11/17/understanding-hkdf/">generate keys from Diffie-Helman</a> output and to create cryptographic random numbers.</p>
 <p>In the case of this French prisoner they were using Linux&rsquo;s most popular hard drive encryption tool, LUKS, which was using a <code>PBKDF2</code> to generate AES keys. In Ubuntu 18.04 this is the default configuration. <code>PBKDF2</code> is a password based KDF designed to be resistant to CPU based attacks and dates back to 2000. It was first mentioned as an <a href="https://www.rfc-editor.org/rfc/rfc2898#section-5.2">internet standard in RFC-2898 in September 2000</a>.</p>
 <h2 id="a-startling-revelation">A startling revelation</h2>
 <p>Since the time PBKDF2 was designed, we&rsquo;ve seen the rise of powerful GPUs become common place. To defend against this rising <a href="https://blog.elcomsoft.com/2020/08/breaking-luks-encryption/">onslaught of GPU hashing power</a> is a relatively new algorithm, argon2.</p>
@@ -178,7 +178,7 @@
 <p><code>sudo cryptsetup luksDump /dev/&lt;YOUR_PARTITION_HERE&gt;</code></p>
 <p>If you do happen to be using an outdated algorithm you should update it! Matthew Garrett, a Linux developer, has written a great <a href="https://mjg59.dreamwidth.org/66429.html">guide to updating old LUKS partitions</a>.</p>
 <h3 id="is-pbkdf2-broken">Is PBKDF2 broken?</h3>
-<p>On the face of it, no. PBKDF2 is not fundamentally broken. It&rsquo;s safe so long as the user always has <a href="https://www.reddit.com/r/linux/comments/12q51ce/comment/jgpvsqc/?utm_source=share&amp;utm_medium=web2x&amp;context=3">a 13 character or longer actually-random™ password</a>. The choice of pbkdf2 vs argon2 is of course domain and application dependant. It remains unclear exactly how authorities accessed Ivan’s hard drive.  so this is more a wake up call</p>
+<p>On the face of it, no. PBKDF2 is not fundamentally broken. It&rsquo;s safe so long as the user always has <a href="https://www.reddit.com/r/linux/comments/12q51ce/comment/jgpvsqc/?utm_source=share&amp;utm_medium=web2x&amp;context=3">a 13 character or longer actually-random™ password</a>. The choice of pbkdf2 vs argon2 is of course domain and application dependant. It remains unclear exactly how authorities accessed Ivan’s hard drive.  So this is more a wake up call to use strong passwords and the best KDFs that fit the use case.</p>
 <h2 id="using-argon2-in-nodejs">Using argon2 in nodejs</h2>
 
 
@@ -225,6 +225,7 @@
 <li>Clarify <a href="#what-is-a-kdf">types of KDFs</a></li>
 <li>Add <a href="#a-startling-revelation">link to commercial LUKS cracking cloud</a></li>
 <li>Add <a href="#is-pbkdf2-broken">&ldquo;Is PBKDF2 broken?&quot;</a> section</li>
+<li>Add link to <a href="#what-is-a-kdf">HKDF explainer</a>.</li>
 </ul>
 
         </div>
