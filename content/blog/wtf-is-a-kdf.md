@@ -20,7 +20,7 @@ In modern computing when applications provide strong file encryption they freque
 
 Key derivation functions (KDFs) are tools that allow us to improve the entropy derived from the types of keys and passwords applications typically use. By performing a series of hashing and salting `PBKDF2` seasons the user's input with entropy sufficient for use in private keys for algorithms like AES and NaCl.
 
-Many [types of KDFs exist](https://crypto.stackexchange.com/a/40767). Specialized KDFs are also used to generate keys from Diffie-Helman output and cryptographic random numbers.
+Many [types of KDFs exist](https://crypto.stackexchange.com/a/40767). Specialized KDFs are also used to [generate keys from Diffie-Helman](https://soatok.blog/2021/11/17/understanding-hkdf/) output and to create cryptographic random numbers.
 
 In the case of this French prisoner they were using Linux's most popular hard drive encryption tool, LUKS, which was using a `PBKDF2` to generate AES keys. In Ubuntu 18.04 this is the default configuration. `PBKDF2` is a password based KDF designed to be resistant to CPU based attacks and dates back to 2000. It was first mentioned as an [internet standard in RFC-2898 in September 2000](https://www.rfc-editor.org/rfc/rfc2898#section-5.2).
 
@@ -52,7 +52,7 @@ If you do happen to be using an outdated algorithm you should update it! Matthew
 
 ### Is PBKDF2 broken?
 
-On the face of it, no. PBKDF2 is not fundamentally broken. It's safe so long as the user always has [a 13 character or longer actually-random™ password](https://www.reddit.com/r/linux/comments/12q51ce/comment/jgpvsqc/?utm_source=share&utm_medium=web2x&context=3). The choice of pbkdf2 vs argon2 is of course domain and application dependant. It remains unclear exactly how authorities accessed Ivan’s hard drive.  so this is more a wake up call 
+On the face of it, no. PBKDF2 is not fundamentally broken. It's safe so long as the user always has [a 13 character or longer actually-random™ password](https://www.reddit.com/r/linux/comments/12q51ce/comment/jgpvsqc/?utm_source=share&utm_medium=web2x&context=3). The choice of pbkdf2 vs argon2 is of course domain and application dependant. It remains unclear exactly how authorities accessed Ivan’s hard drive.  So this is more a wake up call to use strong passwords and the best KDFs that fit the use case.
 
 ## Using argon2 in nodejs
 
@@ -88,3 +88,5 @@ Find this story helpful? Buy us a coffee or give a follow:
  * Clarify [types of KDFs](#what-is-a-kdf)
  * Add [link to commercial LUKS cracking cloud](#a-startling-revelation)
  * Add ["Is PBKDF2 broken?"](#is-pbkdf2-broken) section
+ * Add link to [HKDF explainer](#what-is-a-kdf).
+ 
