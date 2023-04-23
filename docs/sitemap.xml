@@ -3,16 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.dataparty.xyz/tags/app/</loc>
-    <lastmod>2022-10-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.dataparty.xyz/blog/</loc>
-    <lastmod>2022-10-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.dataparty.xyz/categories/</loc>
-    <lastmod>2022-10-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/categories/crypto/</loc>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/tags/linux/</loc>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.dataparty.xyz/tags/privacy/</loc>
-    <lastmod>2022-10-13T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/tags/</loc>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/blog/wtf-is-a-kdf/</loc>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.dataparty.xyz/tags/rfparty/</loc>
     <lastmod>2022-10-13T00:00:00+00:00</lastmod>
@@ -21,9 +33,6 @@
     <lastmod>2022-10-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.dataparty.xyz/blog/rfparty-a-new-way-to-see-ble/</loc>
-    <lastmod>2022-10-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.dataparty.xyz/tags/</loc>
     <lastmod>2022-10-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.dataparty.xyz/</loc>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crypto on blog.dataparty</title>
+    <link>https://blog.dataparty.xyz/categories/crypto/</link>
+    <description>Recent content in crypto on blog.dataparty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2022, Weru and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 22 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dataparty.xyz/categories/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WTF is a KDF? </title>
+      <link>https://blog.dataparty.xyz/blog/wtf-is-a-kdf/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dataparty.xyz/blog/wtf-is-a-kdf/</guid>
+      <description>Earlier this week a letter from an activist imprisoned in France was posted to the internet. Contained within Ivan Alococo’s dispatch from the Villepinte prison was a startling revelation. Police had cracked his LUKS hard drive password. A feat that once was impossible can now be accomplished in a few months by harnessing as many as 10,000 servers with modern GPUs. At the root of this breach is a cryptographic function that is showing its age, PBKDF2.</description>
+    </item>
+    
+  </channel>
+</rss>
