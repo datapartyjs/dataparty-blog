@@ -50,7 +50,7 @@ If you do happen to be using an outdated algorithm you should update it! Matthew
 
 ## Using argon2 in nodejs
 
-{{<picture src="kdf-images/crypto.webp" type="webp" alt="Example argon2 password KDF" caption="Example argon2 password KDF" class="float-right" link="https://github.com/datapartyjs/dataparty-crypto/blob/master/examples/example-password-argon2.js">}}
+{{<picture src="kdf-images/crypto-example.png" type="webp" alt="Example argon2 password KDF" caption="Example argon2 password KDF" class="float-right" link="https://github.com/datapartyjs/dataparty-crypto/blob/master/examples/example-password-argon2.js">}}
 
 
 At the hacker collective, [dataparty](https://dataparty.xyz), we've been building a secure configuration feature that we intend to use to make a secure, decentralized database management tool. We'd recently relied upon pbkdf2 but with the news of Ivan's letter from a French prison we've taken the time to upgrade to argon2 in our nodejs codebases.
@@ -63,7 +63,6 @@ We had some trouble getting the nodejs focused module [`argon2`](https://www.npm
 
 [`dataparty-crypto/example-password-argon2.js` at master · `@dataparty/crypto`](https://github.com/datapartyjs/dataparty-crypto/blob/master/examples/example-password-argon2.js)
 
-Example argon2 password key derivation github.com
 Meanwhile we've added an argon2 example to our [browser example](https://github.com/datapartyjs/dataparty-crypto/blob/master/examples/index.html#L98-L124).
 
 ## Support
