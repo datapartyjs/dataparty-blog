@@ -85,6 +85,6 @@ Find this story helpful? Buy us a coffee or give a follow:
 ## Changes
 
  (23-04-2023)
- * Clarify [types of KDFs](#what-is-a-kdf) - feedback from [tptacek](https://news.ycombinator.com/item?id=35678494)
+ * Clarify [types of KDFs](#what-is-a-kdf)
  * Add [link to commercial LUKS cracking cloud](#a-startling-revelation)
  * Add ["Is PBKDF2 broken?"](#is-pbkdf2-broken) section
