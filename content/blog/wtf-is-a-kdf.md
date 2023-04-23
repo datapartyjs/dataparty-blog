@@ -68,8 +68,9 @@ Meanwhile we've added an argon2 example to our [browser example](https://github.
 
 ## Support
 
-Find this story helpful? Buy me a coffee or give me a follow on github.
- * https://ko-fi.com/nullagent
- * https://github.com/sevenbitbyte
+Find this story helpful? Buy us a coffee or give a follow:
+
+ * https://ko-fi.com/dataparty
+ * https://github.com/datapartyjs
  * https://dataparty.xyz
  * Join our discord https://discord.gg/JrYQ3f4Pxz
