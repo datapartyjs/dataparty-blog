@@ -2,25 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.dataparty.xyz/blog/</loc>
+    <lastmod>2023-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/categories/</loc>
+    <lastmod>2023-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/tags/dataparty/</loc>
+    <lastmod>2023-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/categories/dataparty/</loc>
+    <lastmod>2023-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/tags/linux/</loc>
+    <lastmod>2023-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/tags/privacy/</loc>
+    <lastmod>2023-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/categories/roadmap/</loc>
+    <lastmod>2023-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/blog/state-of-party/</loc>
+    <lastmod>2023-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.dataparty.xyz/tags/</loc>
+    <lastmod>2023-05-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.dataparty.xyz/tags/app/</loc>
     <lastmod>2023-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.dataparty.xyz/blog/</loc>
-    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.dataparty.xyz/categories/</loc>
-    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.dataparty.xyz/categories/crypto/</loc>
-    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.dataparty.xyz/tags/linux/</loc>
-    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.dataparty.xyz/tags/privacy/</loc>
-    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.dataparty.xyz/tags/</loc>
     <lastmod>2023-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.dataparty.xyz/blog/wtf-is-a-kdf/</loc>
