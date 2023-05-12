@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>roadmap on blog.dataparty</title>
+    <link>https://blog.dataparty.xyz/categories/roadmap/</link>
+    <description>Recent content in roadmap on blog.dataparty</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2022, Weru and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 11 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dataparty.xyz/categories/roadmap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>State of Party</title>
+      <link>https://blog.dataparty.xyz/blog/state-of-party/</link>
+      <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dataparty.xyz/blog/state-of-party/</guid>
+      <description>Today billions of people lead double lives. One, grounded in their physical existance. And another, contained within the harddrives of countless corporate clouds. Lifetime&amp;rsquo;s of content and metadata are being shoveled into networks hostile to free expression and privacy.
+Your data is destined to be stored on servers you do not own. To be crunched and combed over for corporate gain, government survailence and exploited by cyber criminals for ill gotten profits.</description>
+    </item>
+    
+  </channel>
+</rss>
