@@ -6,7 +6,25 @@
     <description>Recent content in Categories on blog.dataparty</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022, Weru and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 11 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dataparty.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dataparty.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>defcon</title>
+      <link>https://blog.dataparty.xyz/categories/defcon/</link>
+      <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dataparty.xyz/categories/defcon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rfparty</title>
+      <link>https://blog.dataparty.xyz/categories/rfparty/</link>
+      <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dataparty.xyz/categories/rfparty/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>dataparty</title>
       <link>https://blog.dataparty.xyz/categories/dataparty/</link>
@@ -31,15 +49,6 @@
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.dataparty.xyz/categories/crypto/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rfparty</title>
-      <link>https://blog.dataparty.xyz/categories/rfparty/</link>
-      <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dataparty.xyz/categories/rfparty/</guid>
       <description></description>
     </item>
     
