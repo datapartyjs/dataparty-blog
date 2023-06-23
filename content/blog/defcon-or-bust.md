@@ -13,7 +13,7 @@ categories: [
 
 We are excited to announce that we have been invited to speak at DEFCON 31 this August! Now that we're accepted, we need your help getting there!
 
-We need to raise [$5,000](https://ko-fi.com/dataparty/goal?g=0) over the next 6 weeks to bring all of team members to the conference and to make all of the demos picture perfect.
+We need to raise [$5,000](https://ko-fi.com/dataparty/goal?g=0) over the next 6 weeks to bring all of our team members to the conference and to make all of the demos picture perfect.
 
 Please consider [buying us a coffee or becoming a monthly supporter](https://ko-fi.com/dataparty). You'll also get access to our private Discord Server by becoming a member.
 
