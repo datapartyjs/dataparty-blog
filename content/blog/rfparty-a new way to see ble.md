@@ -28,7 +28,7 @@ While BLE has strong protections against eavesdropping and man-in-the-middle att
 
 The most common solution that BLE devices employ is to send out public broadcasts, which announces the devices existence. This way, the owner can "scan" for these public transmissions, and pair to establish a secure connection. A challenge for device privacy is, that many devices never stop sending out these public beacons. In fact, many BLE products work on entirely broadcast protocols, allowing anyone to learn about the user and their devices by simply listening to these unencrypted transmissions.
 
-Today, low-cost tracking devices use these simple BLE advertisements, combined with vast user ID bases, to create an Always-On corporate surveillance network. This is great for the folks searching for their keys... but what data will their helpful scanning friends provide to these large corporations?
+Today, low-cost tracking devices use these simple BLE advertisements, combined with vast user bases, to create an Always-On corporate surveillance network. This is great for the folks searching for their keys... but what data will their helpful scanning friends provide to these large corporations?
 
 {{<picture src="rfparty-images/apple-devices.png" type="png" alt="rfparty querying nearby apple devices" caption="rfparty querying nearby apple devices" class="float-right">}}
 
