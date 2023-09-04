@@ -1,6 +1,6 @@
 ---
 author: "nullagent"
-date: 2023-08-31
+date: 2023-09-03
 title: "DEFCON 31 - Snoop unto them, as they snoop unto us"
 description: ''
 image: "defcon-31-snoop-unto-them/podium-4.png"
