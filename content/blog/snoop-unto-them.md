@@ -14,6 +14,8 @@ The official videos from DEFCON 31 have been posted!
 
 Below you can watch our talk "Snoop unto them as they snoop unto you". The [talk](https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20video%20and%20slides/DEF%20CON%2031%20-%20Snoop%20on%20to%20them%2C%20as%20they%20snoop%20on%20to%20us%20-%20Alan%20Meekins.mp4), [slides](https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/nullagent%20rekcahdam%20-%20Snoop%20on%20to%20them%20as%20they%20snoop%20on%20to%20us.pdf), [files](https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/nullagent%20rekcahdam%20-%20Snoop%20on%20to%20them%20as%20they%20snoop%20on%20to%20us/) and [code](https://rfparty.xyz/) are also available for download.
 
+Update: The talk is now [available in 1080p HD on YouTube, watch here](https://youtu.be/cO1JSzAdPM8?si=ngK29l2mt41G1rbB).
+
 {{< rawhtml >}}
 
 <video width=100% poster="/images/defcon-31-snoop-unto-them/podium-1.png" controls>

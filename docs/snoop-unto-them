@@ -1,0 +1,19 @@
+<html>
+
+	<body>
+		If you're not redirect, <a href="blog/snoop-unto-them">click here.</a>
+
+
+<script>
+
+function redirect(){
+	console.log(window.location)
+
+	window.location.replace('https://blog.dataparty.xyz' + '/blog' + window.location.pathname)
+}
+
+window.onload = redirect
+
+</script>
+	</body>
+</html>
