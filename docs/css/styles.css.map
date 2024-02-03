@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/home/alanm/dataparty-blog",
+	"sourceRoot": "/home/alanm/code/dataparty-blog",
 	"sources": [
 		"themes/newsroom/assets/sass/main.sass",
 		"themes/newsroom/assets/sass/_variables.sass",

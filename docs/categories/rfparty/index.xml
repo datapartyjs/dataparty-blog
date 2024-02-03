@@ -5,42 +5,30 @@
     <link>https://blog.dataparty.xyz/categories/rfparty/</link>
     <description>Recent content in rfparty on blog.dataparty</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <copyright>Copyright © 2022, Weru and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 03 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dataparty.xyz/categories/rfparty/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.dataparty.xyz/categories/rfparty/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DEFCON 31 - Snoop unto them, as they snoop unto us</title>
       <link>https://blog.dataparty.xyz/blog/snoop-unto-them/</link>
       <pubDate>Sun, 03 Sep 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.dataparty.xyz/blog/snoop-unto-them/</guid>
-      <description>The official videos from DEFCON 31 have been posted!
-Below you can watch our talk &amp;ldquo;Snoop unto them as they snoop unto you&amp;rdquo;. The talk, slides, files and code are also available for download.
-Update: The talk is now available in 1080p HD on YouTube, watch here.
- Follow and Support If you enjoyed our talk, please consder following:
- Buy us a coffee - https://ko-fi.com/dataparty Get rfparty - https://rfparty.xyz Mastodon - https://partyon.</description>
+      <description>The official videos from DEFCON 31 have been posted!&#xA;Below you can watch our talk &amp;ldquo;Snoop unto them as they snoop unto you&amp;rdquo;. The talk, slides, files and code are also available for download.&#xA;Update: The talk is now available in 1080p HD on YouTube, watch here.&#xA;Follow and Support If you enjoyed our talk, please consder following:&#xA;Buy us a coffee - https://ko-fi.com/dataparty Get rfparty - https://rfparty.xyz Mastodon - https://partyon.</description>
     </item>
-    
     <item>
       <title>We&#39;re speaking at DEFCON 31</title>
       <link>https://blog.dataparty.xyz/blog/defcon-or-bust/</link>
       <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.dataparty.xyz/blog/defcon-or-bust/</guid>
-      <description>We are excited to announce that we have been invited to speak at DEFCON 31 this August! Now that we&amp;rsquo;re accepted, we need your help getting there!
-We need to raise $5,000 over the next 6 weeks to bring all of our team members to the conference and to make all of the demos picture perfect.
-Please consider buying us a coffee or becoming a monthly supporter. You&amp;rsquo;ll also get access to our private Discord Server by becoming a member.</description>
+      <description>We are excited to announce that we have been invited to speak at DEFCON 31 this August! Now that we&amp;rsquo;re accepted, we need your help getting there!&#xA;We need to raise $5,000 over the next 6 weeks to bring all of our team members to the conference and to make all of the demos picture perfect.&#xA;Please consider buying us a coffee or becoming a monthly supporter. You&amp;rsquo;ll also get access to our private Discord Server by becoming a member.</description>
     </item>
-    
     <item>
       <title>Rfparty - a new way to see BLE</title>
       <link>https://blog.dataparty.xyz/blog/rfparty-a-new-way-to-see-ble/</link>
       <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.dataparty.xyz/blog/rfparty-a-new-way-to-see-ble/</guid>
-      <description>Today, Millions of IoT devices emit wireless BLE advertisements.
-Rfparty is an app for exploring your wireless world. Built for educators, developers, cybersecurity specialist and the privacy minded to audit these BLE signals.
-Is BLE Private? BLE has become a major part of many people&amp;rsquo;s digital experience, but are these devices built with reasonable privacy in mind? Today there is no way for consumers to know for sure, other than to read the media- and if recent headlines are a barometer, the state of BLE privacy is rather questionable.</description>
+      <description>Today, Millions of IoT devices emit wireless BLE advertisements.&#xA;Rfparty is an app for exploring your wireless world. Built for educators, developers, cybersecurity specialist and the privacy minded to audit these BLE signals.&#xA;Is BLE Private? BLE has become a major part of many people&amp;rsquo;s digital experience, but are these devices built with reasonable privacy in mind? Today there is no way for consumers to know for sure, other than to read the media- and if recent headlines are a barometer, the state of BLE privacy is rather questionable.</description>
     </item>
-    
   </channel>
 </rss>
