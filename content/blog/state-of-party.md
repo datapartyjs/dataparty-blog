@@ -38,7 +38,7 @@ We're a collective of black hackers.
 
 We love ethical hacking, video games, Hip Hop and cinema! We plan to release technology and experiences that combine these core loves.
 
-Throughout 2023 we'll be building many apps based around [@dataparty/api](https://datapartyjs.github.io/dataparty-api/_). These apps will range from video games, social services, IoT platforms and secure file storage. We'll also be releasing various experiences which blur the line between art and technology.
+Throughout 2023 we'll be building many apps based around [@dataparty/api](https://datapartyjs.github.io/dataparty-api/). These apps will range from video games, social services, IoT platforms and secure file storage. We'll also be releasing various experiences which blur the line between art and technology.
 
 {{<picture src="dataparty-2023-timeline.svg" type="svg" class="float-left" alt="dataparty 2023 roadmap" caption="dataparty 2023 roadmap" link="/images/dataparty-2023-timeline.svg">}}
 
@@ -97,7 +97,8 @@ Excited about building a better internet? [Buy us a coffee](https://ko-fi.com/da
  * https://ko-fi.com/dataparty
  * https://github.com/datapartyjs
  * https://dataparty.xyz
- * https://twitter.com/datapartydao
+ * Mastodon [@dataparty@partyon.xyz](https://partyon.xyz/@dataparty)
+ * Twitter [@datapartydao](https://twitter.com/datapartydao)
  * Join our discord https://discord.gg/JrYQ3f4Pxz
 
 
